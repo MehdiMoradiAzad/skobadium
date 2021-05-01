@@ -1,9 +1,13 @@
+aniso8601==9.0.1
 click==7.1.2
 Flask==1.1.2
+Flask-RESTful==0.3.8
 itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
 python-dotenv==0.17.0
+pytz==2021.1
 simplejson==3.17.2
+six==1.15.0
 watchdog==2.0.3
 Werkzeug==1.0.1
