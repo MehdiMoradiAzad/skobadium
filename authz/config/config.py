@@ -14,7 +14,7 @@ class Config:
 
     SQLALCHEMY_DATABASE_URI = environ.get("SKOB_AUTHZ_DATABASE_URI", None)
 
-    SQLALCHEMY_TRACK_MODIFICATION = TESTING
+    SQLALCHEMY_TRACK_MODIFICATIONS = TESTING
 
     ##### User Configuration #####
 
