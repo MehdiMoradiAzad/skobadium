@@ -1,4 +1,5 @@
 from flask import abort, request
+
 from authz import db
 from authz.model import User
 from authz.schema import UserSchema

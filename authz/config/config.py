@@ -10,6 +10,12 @@ class Config:
 
     TESTING = int(environ.get("SKOB_AUTHZ_TESTING", "0"))
 
+    SECRET = environ.get("SKOB_AUTHZ_SECRET", "VERY-HARD-SECURE-SECRET-CODE")
+
+    JWT_ALGO = environ.get("SKOB_AUTHZ_JWT_ALGO", "HS512")
+    
+    JWT_TOKEN_LIFETIME = int(environ.get("SKOB_AUTHZ_JWT_TOKEN_LIFETIME", "86400"))
+
     ##### Database Configuration #####
 
     SQLALCHEMY_DATABASE_URI = environ.get("SKOB_AUTHZ_DATABASE_URI", None)
