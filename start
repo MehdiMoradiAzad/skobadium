@@ -2,6 +2,5 @@
 
 flask db upgrade
 
-gunicorn -w $SKOB_AUTHZ_NUM_WORKERS --error-logfile - --access-logfile - "authz:create_app()"
+gunicorn -w $SKOB_AUTHZ_NUM_WORKERS -b $SKOB_AUTHZ_BIND_ADDRESS:8080 --error-logfile - --access-logfile - "authz:create_app()"
 
-#-b $SKOB_AUTHZ_BIND_ADDRESS
